@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinanzas</title>
+    <script src="adivinanzas.js" defer></script>
+    <style>
+        body {
+           
+            background-image: url(istockphoto-819125774-612x612.jpg);
+            font-family:'Courier New', Courier, monospace;
+            margin: 20px;
+            background-color: #304cd7;
+            color: #333;
+        }
+
+        h1 {
+
+  font-size: 32px;
+  line-height: 150px;
+  text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000;
+  font-family:"Segoe print", Arial, Helvetica, sans-serif;
+  color: #33a7ff; 
+  padding:32px;
+  font-weight:lighter;
+  -moz-box-shadow: 2px 2px 6px #888;  
+  -webkit-box-shadow: 2px 2px 6px #888;  
+  box-shadow:2px 2px 6px #888;  
+  text-align:center;
+  display:inline;
+}
+
+        button {
+            background-color: #46f04c; /* Verde */
+            color: rgb(39, 85, 237);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #bfa9d7; /* azul  */
+        }
+
+        #riddle {
+            font-size: 20px;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #4a90e2;
+            border-radius: 5px;
+            background-color: #e7f3fe; /* Fondo azul claro */
+        }
+
+        input[type="text"] {
+            width: 97%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #2c1fe7;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus {
+         
+            border-color: #002aff; /* Azul al enfocar */
+            outline: none;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="background-image:url(istockphoto-1213689999-612x612.jpg)"><b>Adivinanzas</b></h1>
+    <br><br>
+    <button id="showRiddle"><b>Mostrar Adivinanza</b></button>
+    <p id="riddle"></p>
+    <input type="text" id="userAnswer" placeholder="Tu respuesta aquí">
+    <button id="checkAnswer"><b>Comprobar Respuesta</b></button>
+    <p id="result"></p>
+</body>
+</html>
